@@ -5,7 +5,7 @@ const Child=(prop)=>{
     return(
         <div className="child">
             <h2>Child Component</h2>
-            <ul className="child li" id="itemName">
+            <ul>
                 {
                     items.map((element,index)=>(
                         <li key={index}  className="child li" id="itemName">
