@@ -16,4 +16,4 @@ function Child({ cartItems, onRemove }) {
     )
 }
 
-export default Child
+export default Child;
