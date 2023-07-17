@@ -25,8 +25,8 @@ const Parent=()=>{
     return (
         <div className="parent">
             <h1>Parent Component</h1>
-            <div className="item-name">Item Name<input type="text" value={itemName} onChange={(event)=>setItemName(event.target.value)}/></div>
-            <div className="item-price">Item Price<input type="text" value={itemPrice} onChange={(event)=>setItemPrice(event.target.value)}/></div>
+            <div className="itemName">Item Name<input type="text" id="itemName" value={itemName} onChange={(event)=>setItemName(event.target.value)}/></div>
+            <div className="itemPrice">Item Price<input type="text" id="itemPrice" value={itemPrice} onChange={(event)=>setItemPrice(event.target.value)}/></div>
             <button onClick={handleClick}>Add Item</button>
             <Child addItem={items} removeItem={removeItem}/>
         </div>
