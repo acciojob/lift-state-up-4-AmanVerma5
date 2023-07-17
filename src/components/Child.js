@@ -1,19 +1,16 @@
 import React from "react";
 
-const Child=(prop)=>{
-    let items=prop.addItem
-    return(
-        <div className="child">
+function Child({ cartItems, onRemove }) {
+    return (
+        <div className='child'>
             <h2>Child Component</h2>
             <ul>
-                {
-                    items.map((element,index)=>(
-                        <li key={index}>
-                            {element.name} - {element.price}
-                            <button onClick={()=>prop.removeItem(index)}>Remove</button>
-                        </li>
-                    ))
-                }
+                {cartItems && cartItems.map((item) => (
+                    <li key={item.id}>
+                        {item.name} - ${item.price} 
+                        <button onClick={() => {onRemove(item.id)}}>Remove</button>
+                    </li>
+                ))}
             </ul>
         </div>
     )
