@@ -8,8 +8,8 @@ const Child=(prop)=>{
             <ul>
                 {
                     items.map((element,index)=>(
-                        <li key={index}>
-                            <span>{element.name} - {element.price}</span>
+                        <li key={index} className="child li">
+                            <span id="itemName">{element.name} - {element.price}</span>
                             <button onClick={()=>prop.removeItem(index)}>Remove</button>
                         </li>
                     ))
