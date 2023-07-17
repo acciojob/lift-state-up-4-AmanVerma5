@@ -5,11 +5,11 @@ const Child=(prop)=>{
     return(
         <div className="child">
             <h2>Child Component</h2>
-            <ul>
+            <ul className="child li" id="itemName">
                 {
                     items.map((element,index)=>(
-                        <li key={index} className="child li">
-                            <span id="itemName">{element.name} - {element.price}</span>
+                        <li key={index}  className="child li" id="itemName">
+                            <span  className="child li" id="itemName">{element.name} - {element.price}</span>
                             <button onClick={()=>prop.removeItem(index)}>Remove</button>
                         </li>
                     ))
