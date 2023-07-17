@@ -1,1 +1,18 @@
-
+.item-name{
+    display:inline;
+    margin-right:10px;
+}
+.item-price{
+    display: inline;
+    margin-right: 10px;
+}
+.parent{
+    background-color: lightgreen;
+}
+.child{
+    background-color: orange;
+    margin-left: 20px;
+}
+.parent{
+    width:40%;
+}
